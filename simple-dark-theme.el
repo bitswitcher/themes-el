@@ -1,5 +1,4 @@
 ;;; simple-dark-theme.el --- color theme
-
 ;; Copyright (C) 2014 by bitswitcher
 ;; Version: 0.01
 
@@ -12,35 +11,36 @@
  'simple-dark
  '(default ((t (:background "black" :foreground "white"))))
  '(cursor ((t (:foreground "white"))))
-
  '(gnus-mouse-face ((t (:background "darkolivegreen"))))
  '(list-matching-lines-face ((t (:bold t))))
  '(view-highlight-face ((t (:background "darkolivegreen"))))
-
  '(bold ((t (:bold t))))
  '(bold-italic ((t (:italic t :bold t))))
  '(region ((t (:foreground "white" :background "blue"))))
  '(lazy-highlight ((t (:foreground "black" :background "SkyBlue"))))
-
+ '(trailing-whitespace ((t (:background "dim gray"))))
+ ;; mode-line
  '(mode-line ((t (:foreground "black" :background "green"
                   :box (:line-width 1 :color "black" :style released-button)))))
  '(mode-line-inactive ((t (:foreground "black" :background "gray"
                            :box (:line-width 1 :color "black")))))
  '(mode-line-buffer-id ((t (:foreground "black" :background "green"))))
  '(which-func ((t (:foreground "black"))))
-
- '(trailing-whitespace ((t (:background "dim gray"))))
-
  '(highlight ((t (:foreground "white" :background "Skyblue"))))
  '(hl-line ((t (:background "yellow"))))
 
- '(tabbar-default ((t (:foreground "black" :background "cyan"))))
- '(tabbar-selected ((t (:foreground "white" :background "brightblack"))))
+ ;; isearch
+ '(isearch-fail ((t (:foreground "red"))))
 
- '(bm-persistent-face ((t (:foreground "white" :background "red"))))
+ ;; paren
+ '(show-paren-match-face ((t (:foreground "gold" :background "magenta1"))))
+ '(paren-face ((t (:foreground "gold" :background nil))))
 
- '(ido-first-match ((t (:foreground "yellow"))))
+ ;; dired
+ '(dired-directory ((t (:foreground "magenta1"))))
+ '(dired-symlink ((t (:foreground "gold"))))
 
+ ;; font-lock
  '(font-lock-function-name-face ((t (:foreground nil))))
  '(font-lock-comment-face ((t (:foreground "light blue"))))
  '(font-lock-comment-delimiter-face ((t (:foreground "light blue"))))
@@ -52,13 +52,19 @@
  '(font-lock-builtin-face ((t (:foreground "gold"))))
  '(font-lock-type-face ((t (:foreground "AntiqueWhite3"))))
 
- '(isearch-fail ((t (:foreground "red"))))
+ ;; tabbar
+ '(tabbar-default ((t (:foreground "black" :background "cyan"))))
+ '(tabbar-selected ((t (:foreground "white" :background "brightblack"))))
 
- '(show-paren-match-face ((t (:foreground "gold" :background "magenta1"))))
- '(paren-face ((t (:foreground "gold" :background nil))))
+ ;; bm
+ '(bm-persistent-face ((t (:foreground "white" :background "red"))))
 
- '(dired-directory ((t (:foreground "magenta1"))))
- '(dired-symlink ((t (:foreground "gold"))))
+ ;; ido
+ '(ido-first-match ((t (:foreground "yellow"))))
+
+ ;; magit
+ '(magit-branch ((t (:background "black"))))
+
 )
 
 ;;;###autoload
