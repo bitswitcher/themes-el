@@ -9,7 +9,7 @@
 
 (custom-theme-set-faces
  'simple-dark
- '(default ((t (:background "black" :foreground "white"))))
+ '(default ((t (:background "black" :foreground "nil"))))
  '(cursor ((t (:foreground "white"))))
  '(gnus-mouse-face ((t (:background "darkolivegreen"))))
  '(list-matching-lines-face ((t (:bold t))))
