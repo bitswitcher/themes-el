@@ -63,8 +63,22 @@
  '(ido-first-match ((t (:foreground "yellow"))))
 
  ;; magit
- '(magit-branch ((t (:background "black"))))
+ '(magit-branch ((t (:foreground "gray" :background "black"))))
+ '(magit-section-title ((t (:foreground "green" :background "black"))))
+ '(magit-item-highlight ((t (:foreground nil :background "black"))))
+ '(magit-log-sha1 ((t (:background "gray"))))
+ '(magit-diff-add ((t (:foreground "yellow"))))
+ '(magit-diff-del ((t (:foreground "cyan"))))
+ '(magit-diff-file-header ((t (:foreground "green"))))
+ '(magit-diff-hunk-header ((t (:foreground "pink"))))
+ '(magit-diff-none ((t (:foreground nil))))
 
+ ;; git-commit
+ '(git-commit-summary-face ((t (:foreground nil))))
+ '(git-commit-comment-face ((t (:foreground "green"))))
+ '(git-commit-comment-heading-face ((t (:foreground "green"))))
+ '(git-commit-comment-file-face ((t (:foreground "cyan"))))
+ '(git-commit-nonempty-second-line-face ((t (:foreground nil))))
 )
 
 ;;;###autoload
